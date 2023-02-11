@@ -1,0 +1,5 @@
+102.89.42.60 - - [11/Feb/2023:17:51:11 +0000] "GET / HTTP/1.1" 200 18574 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+102.89.42.60 - - [11/Feb/2023:17:51:12 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "http://164.92.220.1/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+143.110.222.166 - - [11/Feb/2023:17:58:18 +0000] "GET / HTTP/1.1" 200 18589 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1"
+185.246.220.98 - - [11/Feb/2023:18:05:52 +0000] "POST /boaform/admin/formLogin HTTP/1.1" 404 6622 "http://164.92.220.1:80/admin/login.asp" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+185.246.220.98 - - [11/Feb/2023:18:05:53 +0000] "" 400 0 "-" "-"
