@@ -10,10 +10,10 @@ pipeline {
     stage('Build and Test') {
       environment {
         COMPOSE_PROJECT_NAME = 'laravel-app'
-        DB_HOST = 'db'
-        DB_DATABASE = 'laravel'
-        DB_USERNAME = 'laraveluser'
-        DB_PASSWORD = 'password'
+        MYSQL_DATABASE: ${DB_DATABASE}
+        MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+        MYSQL_PASSWORD: ${DB_PASSWORD}
+        MYSQL_USER: ${DB_USERNAME}
       }
       steps {
         sh 'docker-compose build'
