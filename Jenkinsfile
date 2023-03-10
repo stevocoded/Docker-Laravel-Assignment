@@ -16,11 +16,10 @@ pipeline {
         MYSQL_USER: ${DB_USERNAME}
       }
       steps {
-        sh 'docker-compose build'
-        sh 'docker-compose run --rm app composer install'
-        sh 'docker-compose run --rm app php artisan key:generate'
-        sh 'docker-compose run --rm app php artisan migrate --seed'
-        sh 'docker-compose run --rm app vendor/bin/phpunit'
+        sh 'docker-compose up -d'
+        sh 'docker-compose exec app rm -rf vendor composer.lock'
+        sh 'docker-compose exec app composer install'
+        sh 'docker-compose exec app php artisan key:generate'
       }
     }
 
